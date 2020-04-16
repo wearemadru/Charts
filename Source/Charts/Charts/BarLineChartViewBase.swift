@@ -272,7 +272,7 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
         
         xAxisRenderer.renderAxisLabels(context: context)
         leftYAxisRenderer.renderAxisLabels(context: context)
-        rightYAxisRenderer.renderAxisLabels(context: context)
+//        rightYAxisRenderer.renderAxisLabels(context: context)
 
         if clipValuesToContentEnabled
         {
@@ -293,6 +293,8 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
         drawDescription(context: context)
         
         drawMarkers(context: context)
+        
+        rightYAxisRenderer.renderAxisLabels(context: context)
     }
     
     private var _autoScaleLastLowestVisibleX: Double?
